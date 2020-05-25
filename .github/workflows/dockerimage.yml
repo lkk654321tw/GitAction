@@ -16,6 +16,8 @@ jobs:
     - uses: actions/checkout@v2
     - name: Build the Docker image
       run: docker build . --file coredns/Dockerfile --tag docker-images/coredns:1.6.7
+    - name: login docker
+      run: docker login -u lkk654321tw -p simon561220
     - name: push coredns  
       run: docker push lkk654321tw/docer-images/coredns:1.6.7
       
