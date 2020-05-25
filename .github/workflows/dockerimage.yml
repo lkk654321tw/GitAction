@@ -17,7 +17,5 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file coredns/Dockerfile --tag docker-images/coredns:1.6.7
     ‐ name: push
-      uses: docker/push-action@v1
-        with:
-        registry: lkk654321tw
-        tags: docker-images/coredns:1.6.7
+      run: docker push lkk654321tw/docer-images/coredns:1.6.7
+      
