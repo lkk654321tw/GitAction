@@ -19,5 +19,5 @@ jobs:
     - name: login docker
       run: docker login -u lkk654321tw -p simon561220
     - name: push coredns  
-      run: docker push docer-images/coredns:1.6.7
+      run: docker push docker-images/coredns:1.6.7
       
